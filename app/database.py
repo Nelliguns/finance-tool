@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
                          #"postgresql://<username>:<password>@<ip-adress/hostname>/<database_name>"
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:password123@localhost/freefinance"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:password123@localhost/freefinance" # env variables would of course be used in production :)
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL,
